@@ -1,0 +1,25 @@
+#React useEffect hooks
+1. UseEffect is a hook which allows us to perform side effect in our components like fetching data, directly updating DOM, and timers
+2. useEffect accept two arguments , the second arrguments is optional 
+    useEffect(<function>,<dependency>)
+   
+Example:- lets make a counter using setTimeout() and useEffect;
+
+import { useState, useEffect } from "react";   ----for importing react which is basic step
+import ReactDOM from "react-dom/client";
+
+function Timer() {                             ------timer function for applying timer in code
+  const [count, setCount] = useState(0);       ------by using useState we can update the text or conteant
+
+  useEffect(() => { 
+    setTimeout(() => {
+      setCount((count) => count + 1);        -----here we are using closer for applying timer effect i.e count pass as an fun to setCount
+    }, 1000);
+  });
+
+  return <h1>I've rendered {count} times!</h1>;   ----here we are updating the time in {count} part
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Timer />);
+   
