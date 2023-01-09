@@ -27,7 +27,7 @@ Step3 : create one autocounter.js file
         let [count, setCount] = React.useState(0);    ------the thing return inside [] called as destructuring 
 
         // Mounting
-        React.useEffect(() => {
+        React.useEffect(() => {             ------here we are using React.useEffect to render our page automatically 
             let interval = setInterval(() => {
               setCount((count) => count + 1);
          }, 1000);
@@ -37,7 +37,8 @@ Step3 : create one autocounter.js file
         stopButton.addEventListener('click', () => {
             clearInterval(interval);
           })
-       }, []);
+       }, []);                 -----why here we are using [] , because it will rendear our function at once if we not do this 
+                                    it will show abnormal behaviour and after some time our pc will hanged 
     
        return (
         <div>
