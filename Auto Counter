@@ -1,0 +1,52 @@
+Que1. create a autocounter which render automactical and have one stop button 
+
+Requirements:- Three files are require index.html,index.js,autocounter.js
+
+Step1 : In index.html file 
+       <html>
+       <body>
+          <div id="root"></div>
+       </body>
+       </html>
+       
+Step2 : In index.js file
+          import AutoCounter from './autocounter';
+          
+          const root = ReactDOM.createRoot(document.getElementById('root'));
+          root.render(
+          <div>
+            <AutoCounter/>
+          </div>
+         );
+         
+Step3 : create one autocounter.js file 
+
+         import React from "react";
+
+        export function AutoCounter() {
+        let [count, setCount] = React.useState(0);    ------the thing return inside [] called as destructuring 
+
+        // Mounting
+        React.useEffect(() => {
+            let interval = setInterval(() => {
+              setCount((count) => count + 1);
+         }, 1000);
+
+        const stopButton = document.querySelector('.stop_button');
+
+        stopButton.addEventListener('click', () => {
+            clearInterval(interval);
+          })
+       }, []);
+    
+       return (
+        <div>
+            <p>{count}</p>
+            <button className="stop_button">Stop Counter</button>
+        </div>
+       )
+      }
+
+
+         
+       
