@@ -1,0 +1,32 @@
+to make multipe components in react we are using props
+
+//in app.js file write this
+import './App.css';
+
+const Hello = (props) => {
+  console.log(props)
+    return (
+      <div>
+        <h2>Student {props.number}</h2>
+        <h3>Hello I'm  {props.name} and I'm {props.age} years old</h3>
+      </div>
+    )
+  }
+
+function App() {
+  const name="Bhari Ram";
+  const age="28";
+  const number="5";
+  return (
+        <div>
+         <h1>Greetings</h1>
+         <Hello number="1" name="Ritu" age="20"/>
+         <Hello number="2" name="Riya" age="21"/>
+         <Hello number="3" name="Ruhi" age="22"/>
+         <Hello number="4" name="Renu" age="23"/>
+         <Hello number={number} name={name} age={age}/>
+        </div>
+      )
+}
+
+export default App;
