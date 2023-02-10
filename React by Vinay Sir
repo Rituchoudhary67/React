@@ -74,9 +74,24 @@ history.
    JSX allows us to write HTML in React.
    JSX makes it easier to write and add HTML in React.
 
+6. What is NodeJS in react?
+   NodeJS is a framework of JavaScript which is mainly used for working with the backend of our application 
+   ReactJS is a JavaScript front-end library. It is mainly used for building the user interface or the frontend of our application.
+   
+7. Virtual Dom?
+   The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory
+   and synced with the “real” DOM by a library such as ReactDOM. This process is called reconciliation.
 
+8. what is Real Dom?
+   It is a structured representation of HTML in the webpage or application.
+   It is a structural representation of HTML elements of a web application in simple words.
 
-
+9. What id Difference between Real DOm and Virtual DOM?
+   Real DOM	                                                Virtual DOM
+   There is too much memory wastage	                        No memory wastage
+   It updates Slow                                       	It updates fast
+   It can directly update HTML	                           It can't update HTML directly
+   Creates a new DOM if the element updates.             	Update the JSX if the element update
 
 
 
