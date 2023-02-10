@@ -68,7 +68,11 @@ history.
 4. What is the difference between SSR and CSR?
    The main difference between SSR and CSR is where the page is rendered.
    SSR renders the page on the server-side and CSR renders the page on the client-side.
-
+   
+5. What is JSX ?
+   JSX stands for JavaScript XML.
+   JSX allows us to write HTML in React.
+   JSX makes it easier to write and add HTML in React.
 
 
 
