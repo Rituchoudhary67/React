@@ -52,8 +52,22 @@ navigator
 screen
 history.
 
+--------------------------------------------------DAY1 MY OWN NOTES-------------------------------------------------------
+1. what is SSR?
+   Server-side rendering is when content on our webpage is rendered on the server and not on our browser using JavaScript.
+   
+2. why we are using SSR?
+   Server-side rendering (SSR) means that the content of our site is generated on the server, then sent to the browser. 
+   This is useful for search engine optimization(SEO) purposes, because search engines can "see" the content of your site
+   before they send it to users.
 
-
+3. what is CSR?
+   In client side rendering (CSR), we are completely running ReactJS on the browser.
+   The initial HTML rendered by the server is a placeholder and the entire UI is rendered in the browser once all our scripts load.
+   
+4. What is the difference between SSR and CSR?
+   The main difference between SSR and CSR is where the page is rendered.
+   SSR renders the page on the server-side and CSR renders the page on the client-side.
 
 
 
