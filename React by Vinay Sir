@@ -11,3 +11,70 @@ Day1:
 
 ------> what is SSR and CSR.
 1. What is render / rendering ?
+first time when a page is painted then this is known as render.
+
+SSR:-
+nextjs,nuxtjs
+in server side rendering the page is render from the server only.
+
+CSR :-
+ReactJS , VanillaJS , VueJS.
+in the client side rendering the page is rendered using from user/clinet side.
+in ssr is handeld quite easy.
+
+what is JSX ?
+Javascript Xtension.
+javascript XML(Xtensible markup language)
+
+what is JS and JSX.
+JS:- For making UI Interactive web application.
+JSX:- JSX is advance version of js in which we can use HTML tag inside our JS file.
+
+Babel:- it is a compiler which converts JSX code in HTML, CSS and JS
+
+SPA:- single page application
+
+NodeJS Basics.
+npx create-react-app myapp
+npx create-react-app .
+Node Package execute
+
+npm :- Node package Manager
+package.json :- in this file all the details related to our project is available.
+package-lock.json :- this file is the extended version of package.json. it is a good practice to hide package-lock.json.
+
+Real DOM:-
+Document object model(DOM) :- it is the dom provided by browser will all the requirements of a web page.
+BOM :- Browser object model :- In BOM we have all the details related to a browser.
+Window
+Location
+navigator
+screen
+history.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
