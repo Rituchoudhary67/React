@@ -93,6 +93,12 @@ history.
    It can directly update HTML	                           It can't update HTML directly
    Creates a new DOM if the element updates.             	Update the JSX if the element update
 
+10. what is ReactJS ?
+    A JavaScript library created by Facebook for building user interfaces
+    Its aim is to allow developers to easily create fast user interfaces for websites and applications 
+
+11. Working of ReactJS ?------don't know
+
 
 
 
