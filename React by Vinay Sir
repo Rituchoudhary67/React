@@ -32,7 +32,7 @@ JSX:- JSX is advance version of js in which we can use HTML tag inside our JS fi
 
 Babel:- it is a compiler which converts JSX code in HTML, CSS and JS
 
-SPA:- single page application
+SPA:- single page application.
 
 NodeJS Basics.
 npx create-react-app myapp
