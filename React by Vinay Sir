@@ -51,6 +51,164 @@ Location
 navigator
 screen
 history.
+---------------------------------day2-------------------------
+Virtual DOM :-
+Virtual DOM stores a copy of previous change and compare with the new changes and only update that change in real dom.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <button>+</button>
+    <h2></h2>
+</body>
+<script>
+    let count = 1;
+    let btn = document.querySelector("button");
+    let h2 = document.querySelector("h2");
+    console.log(h2);
+    h2.innerHTML = count;
+    btn.addEventListener("click", () => {
+        count++;
+        console.log(count);
+       // h2.innerHTML = count;// Need to add this to handle the behaviour
+    });
+</script>
+</html>
+
+
+Here the value of count is not chaning in the UI but it is changing in the console. So to overcome this we need to add an extran innerHTML to handle the same behaviour.
+
+So to overcome this kind of issue we will going to use virtual dom.
+
+
+
+==> React JS.
+React is developed by Facebook (Jordan Walke).
+React is a JS Framework and library.
+Framework :- It is a collection of libraries.
+Library :- It is a collection of limited functions.
+
+==> Why we use ReactJS.
+So to make our code less complex and small. It is use to make Interactive User interface.
+
+
+
+==> Folder Structure.
+React Entry point is index.html inside public folder.
+
+
+--> Using Components we can reuse the code again and again.
+
+
+React                           React Native
+---------------------------------------------------------
+Library                         Framework
+Web applications                Mobile applications
+Virtual DOM                     Native API
+animation CSS                   animated API
+HTML Tags                       Can't use HTML Tags
+CSS Styling                     JS stylesheet for styling
+
+React Working
+
+
+First JSX 
+
+1. App -- delete
+2. Changed in header logged in -- delete
+3. Changed in header logged out -- Virtual DOM.
+
+
+
+Virtual DOM -> Babel -> RealDOM
+
+--> OOPS -> Object Oriented Programming Language.
+1. Abstraction :- To show only improtant things and hiding the others.
+2. Encapsulation :- Properties (variables) and methods (functions) into a single container.
+3. Inheritance :- When a child inherit some properties from its parent than it is referred to as Inheritance.
+4. Polymorphism :- Passing different message using same name is known as Polymorphism. Function overloading.
+5. Classes and Object :- Classes and object.
+
+Function Overloading:- Function name is same but function defination will be different.
+
+
+function add(a,b) {
+    return a+b;
+}
+
+function add(a,b,c) {
+    return a+b-c;
+}
+
+function add(a,b,c,d) {
+    return a*b+c+d;
+}
+
+print(add(5,6,5,6));
+
+Here we are passing different parameters to the same function 'add' depending upon the number of parameter the function is being called.
+
+
+Collection of similar type of entities is known as class.
+Collection of entities which posses similar kind of behaviour is known as class.
+
+A single entity of a class is known as Object.
+
+Class of entities which :-
+1. have 4 legs.
+2. two eyes.
+3. 1 tail.
+4. Bark.
+are known as Dogs. -> 10 members
+
+Class of entities which :-
+1. have 4 legs/
+2. two eyes.
+3. drink milk.
+4. likes fish.
+5. do mio mio.
+are known as Cats.
+
+
+College 
+B.Tech -> Same class.
+1. course B.Tech 
+
+School
+12th Commerce 
+12th Bio
+12th Maths
+
+
+element :- The element is returned from the component.
+component:- The large entity of a page is referred to as component. State, props and functions are part of component.
+
+
+
+LifeCycle :-
+Living orga LifeCycle :- 
+Birth - create
+_______
+child  | 
+Teen   |
+Adult  | -- Updation
+Old    |
+________ 
+Die - destroy
+
+Component:- 
+1. Mount -> creation phase
+2. Updation -> state change, props change, ref change.
+3. Unmount -> destroy
+
 
 --------------------------------------------------DAY1 MY OWN NOTES-------------------------------------------------------
 1. what is SSR?
