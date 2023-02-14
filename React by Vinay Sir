@@ -209,7 +209,110 @@ Component:-
 2. Updation -> state change, props change, ref change.
 3. Unmount -> destroy
 
+--------------------------
 
+
+Todo :- 
+1. Class Component -> Done
+2. state and props in class Component -> Done
+3. trigerring functions in class Component -> Done
+4. Lifecycles methods of class Component -> In Progress
+5. How to update the component without using the State?
+6. Difference btn ejs/jsx
+
+
+--> Class Component:- 
+    A react component which we make with the help of class or using the "class" keyword.
+
+    So, to make a class react we use Component class from react Library.
+    Here we use inheritance. We inherit some properties of Component class into our Component.
+
+    State and props :- 
+    ==> State
+        State is a react Object which we use to store some data or information about the component.
+        We can use the state only in the particular component.
+        We can't use that state outside of that component.
+        State informs the Virtual Dom (React DOM) the information or data related to component.
+        If there are some changes in the state than state will inform the Virtual DOM that there are some changes in the Component.
+        Virtual DOM than compare and re-paint the component.
+
+    ==> Props
+        We can pass props from one Component to Another Component.
+        Props are Uni-directonal.
+        Props Travel from Parent to Child.
+        We can't Change the value of Props.
+
+    ==> Prop Drilling :- 
+        The process of transferring of data from one component to another component is a DOM tree is known as props drilling.
+
+
+
+                  Index
+                    | 
+                   App
+                    |
+    _________________________________
+    |               |               |
+    Header          Main            Footer
+    |                                   |
+ ________________               _____________
+ |              |               |           |
+ Login       Signup             Foot1       Foot2
+                                |
+                                Foot2
+
+
+
+
+
+
+
+
+
+
+
+Koi Component
+
+
+
+==> Read, write and append 
+Read :- We can only read/use the value;
+Write :- We can assign the new value to it.
+Append:- We can add some more data into the value;
+
+let a = 'Hello';
+console.log(a); // Read
+a = 'Hello2' // Write
+a += 'Hello' // 'Hello2 Hello' Append
+
+
+
+
+
+
+-> To import any component or functions into another file/Component we have to export the function or component from that file.
+-> We can export the function or component in two ways :- 
+    1. By using export default.
+    2. By exporting all the function/Components as a Object.
+
+While importing the Component or function.
+    1. If we are exporting using default than we can directly import it like :- 
+    import Main from 'Component/Main';
+
+    2. If we are exporting all as a Object.
+        a. We should destructure it from the file.
+            import { Main, Main1, Main2 } from 'Component/Main';
+        b. We should import all as any Identifier (Name);
+            import * as Mains from 'Component/Main';
+        
+
+--> Assignments :- 
+    1. Revise today Class.
+    2. Login page.
+        --> User should able to enter email and password.
+        --> When clicking on a button user should ableto login and print Hello world with User email address.
+        
+        
 --------------------------------------------------DAY1 MY OWN NOTES-------------------------------------------------------
 1. what is SSR?
    Server-side rendering is when content on our webpage is rendered on the server and not on our browser using JavaScript.
