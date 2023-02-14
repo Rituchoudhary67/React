@@ -55,6 +55,7 @@ history.
 Virtual DOM :-
 Virtual DOM stores a copy of previous change and compare with the new changes and only update that change in real dom.
 
+counter using dom not react
 
 <!DOCTYPE html>
 <html lang="en">
