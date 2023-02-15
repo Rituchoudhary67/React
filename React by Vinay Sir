@@ -85,7 +85,8 @@ counter using dom not react
 </html>
 
 
-Here the value of count is not chaning in the UI but it is changing in the console. So to overcome this we need to add an extran innerHTML to handle the same behaviour.
+Here the value of count is not chaning in the UI but it is changing in the console. So to overcome this we need to add an 
+extran innerHTML to handle the same behaviour.
 
 So to overcome this kind of issue we will going to use virtual dom.
 
@@ -342,9 +343,13 @@ Phases of component lifecycle :-
     3. componentDidMount() :- Once the component will be mounted than this method will run.
     4. componentDidUpdate() :- It will run everytime when a component is updated.
     5. computentWillUnmount() :- It will run before the Unmount of the Component.
-    6. static getDerivedStateFromProps() :- When the state of a component is dependent on the props than we call this method to update the static according to the props. 
-    7. shouldComponentUpdate(newProps) :- When the new value of prop is equal to old value of prop than we should not re-render the component. So to handle this kind of behaviour we use shouldComponentUpdate().
-    8. getSnapshotBeforeUpdate(prevProps, prevState) :- When we want to store the old value (state, props) or we want to have a snapshot of old value (state, props) so we use getSnapshotBeforeUpdate. It will give us prevProps and prevState
+    6. static getDerivedStateFromProps() :- When the state of a component is dependent on the props than we call this method to
+                                            update the static according to the props. 
+    7. shouldComponentUpdate(newProps) :- When the new value of prop is equal to old value of prop than we should not re-render 
+                                          the component. So to handle this kind of behaviour we use shouldComponentUpdate().
+    8. getSnapshotBeforeUpdate(prevProps, prevState) :- When we want to store the old value (state, props) or we want to have a 
+                                                        snapshot of old value (state, props) so we use getSnapshotBeforeUpdate. 
+                                                        It will give us prevProps and prevState 
 
 
 
