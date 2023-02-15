@@ -210,7 +210,7 @@ Component:-
 2. Updation -> state change, props change, ref change.
 3. Unmount -> destroy
 
---------------------------
+----------------------------day3-----------------------------
 
 
 Todo :- 
@@ -313,6 +313,63 @@ While importing the Component or function.
         --> User should able to enter email and password.
         --> When clicking on a button user should ableto login and print Hello world with User email address.
         
+        
+        
+ ----------------------------day4-----------------------------
+
+        
+ --> For tomorrow's session :- 
+    1. Lifecycles methods of class Component -> Done
+    2. How to update the component without using the State? -> forceUpdate();
+    3. Difference btn ejs/jsx;
+    4. Conditional rendering.
+    5. Font-awesome.
+    6. Bootstrap use.
+    7. ref, memo, callback.
+    8. Basic Project using Class Component.
+
+Reference Link :- 
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+Phases of component lifecycle :- 
+    1. Mount :- create / Birth of a component.
+    2. Update :- Component update :- (new props, state change, forceUpdate);
+    3. Unmount :- compoment destroy / death.
+
+--> Lifecycle methods (first five are the most common and important lifecycle method of class component) :- 
+    1. render() :- This method will run when the component is mounting and updating.
+    2. constructor() :- This method will run when the component is going to mount. It will before render.
+    3. componentDidMount() :- Once the component will be mounted than this method will run.
+    4. componentDidUpdate() :- It will run everytime when a component is updated.
+    5. computentWillUnmount() :- It will run before the Unmount of the Component.
+    6. static getDerivedStateFromProps() :- When the state of a component is dependent on the props than we call this method to update the static according to the props. 
+    7. shouldComponentUpdate(newProps) :- When the new value of prop is equal to old value of prop than we should not re-render the component. So to handle this kind of behaviour we use shouldComponentUpdate().
+    8. getSnapshotBeforeUpdate(prevProps, prevState) :- When we want to store the old value (state, props) or we want to have a snapshot of old value (state, props) so we use getSnapshotBeforeUpdate. It will give us prevProps and prevState
+
+
+
+-> ejs / jsx:- 
+ejs :- embedded javaScript. It will return a HTML element. Server Side Rendering. It is created on server and then transferred to client.
+jsx :- javaScript extension. It will return a HTML element. Client Side Rendering. It is created on client only.
+
+--> Conditional Rendering:- 
+    1. Ternary Operator :- Using ternary operator we can render the Component on the basis of a state/value;
+    2. Using && Operator:- Using this operator we can render the Component on the basis of state/value.
+
+
+Assignemnt:- 
+1. Revise today session.
+2. Design the Header and Login of w3schools. (Login part already done in last assignemnt only need to add CSS styling).
+
+Tomorrow :- 
+
+    1. ref, memo, callback.
+    2. Font-awesome.
+    3. Bootstrap use.
+    4. MUI (Material UI).
+    5. Basic Project using Class Component.
+
+
         
 --------------------------------------------------DAY1 MY OWN NOTES-------------------------------------------------------
 1. what is SSR?
