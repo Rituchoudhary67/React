@@ -375,6 +375,62 @@ Tomorrow :-
     5. Basic Project using Class Component.
 
 
+----------------------------------------day5---------------------------------------------------
+
+Todo:- 
+    1. ref, memo, callback.
+    2. Font-awesome.
+    3. Bootstrap use.
+    4. MUI (Material UI).
+
+
+1. ref, memo and callback.
+--> refs
+    The ref is created because it will provide us the element where we provide the ref attribute.
+    We can create a ref using React.createRef();
+    this.myRef = React.createRef();
+    For example :- 
+
+    <input ref={this.myRef} />
+
+    In this.myRef the input element is stored in its current key.
+    So we can use the this.myRef.current for changing the element or for performing any dom manipulation or can access its value
+
+--> PureComponent :- 
+    To perform the optimization in class Component we use PureComponent.
+    Using Pure Component we don't need to use shouldComponentUpdate. It will automatically prevent the rerendring of the Component.
+
+--> Callback :- 
+    To pass the data from child component to parent component we use Callback
+
+
+
+
+
+--> Font Awesome :-
+npm i --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+npm i @fortawesome/fontawesome-free-solid
+
+--> React bootstrap :-
+ npm install react-bootstrap bootstrap --> Install
+import 'bootstrap/dist/css/bootstrap.css'; --> It is require for CSS.
+import { Alert, Button, Badge } from 'react-bootstrap'; --> Import
+
+
+--> React MUI
+npm install @mui/material @emotion/react @emotion/styled - install
+
+
+--> React Icons :- 
+npm install react-icons --save
+https://react-icons.github.io/react-icons/icons?name=ci
+
+
+Day After Tomorrow :- 
+    1. Basic Project using Class Component.
+
         
 --------------------------------------------------DAY1 MY OWN NOTES-------------------------------------------------------
 1. what is SSR?
