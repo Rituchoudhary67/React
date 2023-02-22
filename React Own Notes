@@ -15,3 +15,46 @@ before make changes to browser DOM
 #What is ES6?
 ES6 stands for ECMAScript 6.
 like most of the browser has not support the advance version of js to handle this behaviour we use ES6.
+
+#What is Classes in React?
+A class is a type of function, but instead of using the keyword function to initiate it,
+we use the keyword class, and the properties are assigned inside a constructor() method.
+Example :- class Car {
+             constructor(name) {
+             this.brand = name;
+            }
+           }
+Note :- while useing classes in react we have to write class name in uppercase.
+        The constructor function is called automatically when the object is initialized.
+        
+#What is Class Inheritance in React?
+To create a class inheritance, use the extends keyword.
+
+Example :- class Car {
+             constructor(name) {
+               this.brand = name;
+             }
+
+             present() {
+               return 'I will buy ' + this.brand;
+             }
+          }
+
+          class Model extends Car {
+          constructor(name, mod) {
+          super(name);
+          this.model = mod;
+         }  
+         show() {
+              return this.present() + ', it is a ' + this.model
+           }
+         }
+        const mycar = new Model("Thar", "Mustang");
+        mycar.show();
+        
+//output :- I will buy Thar it is a Mustang.
+
+Note :- The super() method refers to the parent class.
+        By calling the super() method in the constructor method,
+        we call the parent's constructor method and get access to the parent's properties and methods.
+
