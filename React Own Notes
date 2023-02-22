@@ -11,3 +11,7 @@ React creates a virtual dom in memory
 and React only changes what needs to be changed.
 Insted of manipulating the browser Dom directly it will create a virtul dom and where it does all the manipulation 
 before make changes to browser DOM 
+
+#What is ES6?
+ES6 stands for ECMAScript 6.
+like most of the browser has not support the advance version of js to handle this behaviour we use ES6.
