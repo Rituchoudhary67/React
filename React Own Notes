@@ -93,3 +93,23 @@ Note :- When destructuring arrays, the order that variables are declared is impo
 JSX stands for JavaScript XML.
 JSX allows us to write HTML in React.
 JSX makes it easier to write and add HTML in React.
+
+#What is React Components?
+Components are independent and reusable bits of code and it returns HTML.
+There are two type of components
+           _______________|________________
+          |                               |
+   Class Components                   Function Components  
+   it use class keyword               it used function keyword
+   it returns html                    it also returns html  
+   need extends React.Component       less code 
+   also render() method,              easer to understand
+Example :-                             Example :-
+class Car extends React.Component {     function Car() {
+render() {                                      return <h2>Hi, I am a Car!</h2>;
+ return <h2>Hi, I am a Car!</h2>;              }
+ }
+}
+Note :- creating a React component, the component's name MUST start with an upper case letter.
+
+  
