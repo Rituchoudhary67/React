@@ -64,3 +64,28 @@ Note :- The super() method refers to the parent class.
   In React, map() can be used to generate lists.
   Example :- const myArray = ['apple', 'banana', 'orange'];
              const myList = myArray.map((item) => <p>{item}</p>)
+
+#What is Destructuring?
+lets understand the destructuring with the help of example like if i want to make a sandwhich can i get every indegrient which present
+in firdge? ans is no i will chosed which i like same with the destructuring it will only select some items from array or object.
+
+Example :- #Destructuring with array.
+           const sandwhich = ['carrot', 'onion', 'Tomato' , 'cabbage' ];
+           const [item1 , item2 , item3 , item4] = sandwhich;
+           //let say i want only cabbage and tomato what i will do???
+           const [ , , item3 , item4 ] = sandwhich;
+           
+Note :- When destructuring arrays, the order that variables are declared is important.
+
+           #Destrucuting with object
+           const sandwhich = {
+               item1: 'carrot',
+               item2: 'Tomato',
+               item3: 'cabbage',
+               item4: 'onoin'
+           }
+           mySandwhich(sandwhich);
+          function mySandwhich({item1, item3, item2, item4}) {
+          const message = 'I am making sandwhich ' + 'in which' + item1 + item3 + ' is  there' + 'but' + item2 + item4 + 'is not there.';
+         }
+
