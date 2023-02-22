@@ -58,3 +58,9 @@ Note :- The super() method refers to the parent class.
         By calling the super() method in the constructor method,
         we call the parent's constructor method and get access to the parent's properties and methods.
 
+#Array methods in React?
+1.Map
+  The .map() method allows you to run a function on each item in the array, returning a new array as the result.
+  In React, map() can be used to generate lists.
+  Example :- const myArray = ['apple', 'banana', 'orange'];
+             const myList = myArray.map((item) => <p>{item}</p>)
