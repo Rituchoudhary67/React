@@ -112,4 +112,5 @@ render() {                                      return <h2>Hi, I am a Car!</h2>;
 }
 Note :- creating a React component, the component's name MUST start with an upper case letter.
 
-  
+######################################--------React Class Components--------################################### 
+
