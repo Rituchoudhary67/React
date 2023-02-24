@@ -262,7 +262,8 @@ export default class Car extends Component {
 // in app.js :- <Car />
 
 
-
+#Changing the state Object
+To change a value in the state object, use the this.setState() method.
 
 
 
