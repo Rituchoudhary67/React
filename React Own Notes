@@ -24,7 +24,7 @@ Example :- class Car {
              this.brand = name;
             }
            }
-Note :- while useing classes in react we have to write class name in uppercase.
+Note :- while using classes in react we have to write class name in uppercase.
         The constructor function is called automatically when the object is initialized.
         
 #What is Class Inheritance in React?
@@ -60,14 +60,14 @@ Note :- The super() method refers to the parent class.
 
 #Array methods in React?
 1.Map
-  The .map() method allows you to run a function on each item in the array, returning a new array as the result.
+  The .map() method allows us to run a function on each item in the array, returning a new array as the result.
   In React, map() can be used to generate lists.
   Example :- const myArray = ['apple', 'banana', 'orange'];
              const myList = myArray.map((item) => <p>{item}</p>)
 
 #What is Destructuring?
-lets understand the destructuring with the help of example like if i want to make a sandwhich can i get every indegrient which present
-in firdge? ans is no i will chosed which i like same with the destructuring it will only select some items from array or object.
+lets understand the destructuring with the help of example like ,if i want to make a sandwhich can i get every indegrient which present
+in firdge? ans is no i will chosed which i like.  same with the destructuring it will only select some items from array or object.
 
 Example :- #Destructuring with array.
            const sandwhich = ['carrot', 'onion', 'Tomato' , 'cabbage' ];
@@ -134,3 +134,43 @@ They serve the same purpose as JavaScript functions, but work in isolation and r
 #What is Component Constructor?
 If there is a constructor() function in our component, this function will be called when the component gets initiated.
 In React, component properties is kept in an object called state.
+
+Example :-
+import React, { Component } from 'react'
+
+export default class Car extends Component {
+  constructor() {
+    super(); 
+      this.state = {color:"red"};
+    
+  }
+  render() {
+    return (
+      <div>
+        <h2>I am Driving {this.state.color} Car</h2>
+      </div>
+    )
+  }
+}
+
+#Props in class component?
+Another way of handling component properties is by using props.
+Props are like function arguments, here we can send them into the component as attributes.
+
+Example :-
+import React, { Component } from 'react'
+
+export default class Car extends Component {
+  render() {
+    return (
+      <div>
+        <h2>I am Driving {this.props.color} Car</h2>
+      </div>
+    )
+  }
+}
+
+//in aap.js file :-  < Car color="red" />
+Note :- here we have to write this.props.state 
+
+
