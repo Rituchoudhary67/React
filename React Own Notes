@@ -174,3 +174,97 @@ export default class Car extends Component {
 Note :- here we have to write this.props.state 
 
 
+#How to use Props in the Constructor??
+If our component has a constructor function, the props should always be passed to the constructor 
+and also to the React.Component through the super() method.
+
+Example :- 
+import React, { Component } from 'react'
+
+export default class Car extends Component {
+  constructor(props) {
+    super(props);
+  } 
+  render() {
+    return (
+      <div>
+        <h1>I am Driving {this.props.model}</h1>
+      </div>
+    )
+  }
+}
+
+//in render method :-    < Car model="Thar" />
+
+#How to use Components in Components??
+We can refer to components inside other components:
+
+Example :- 
+import React, { Component } from 'react'
+
+class Food extends React.Component{
+  render() {
+    return(
+      <>
+      <h1>I Like to eat every Sweet, specially Soanpapri,gulabjamun,kajukatli and every thing </h1>
+      </>
+    )
+  }
+}
+
+export default class Car extends Component {
+  render() {
+    return (
+      <div>
+        <Food />
+        <h2>I will go by my own Thar</h2>
+      </div>
+    )
+  }
+}
+
+
+//in app.js :- inport main component i.e <Car />
+
+
+#What is React Class Component State?
+React Class components have a built-in state object.
+The state object is where we can store property values that belongs to the component.
+When the state object changes, the component re-renders.
+
+Example :- 
+import React, { Component } from 'react'
+
+export default class Car extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      material:"aalo,pani,papari",
+      step1 : "papri",
+      step2 : "aalo chatni",
+      step3 : "pani",
+      step4 : "so tasty"
+    }
+  }
+  render() {
+    return (
+      <div>
+        <h1>HOW TO MAKE GUPCHHUP ?</h1>
+        <h4>
+          First of all take {this.state.material} and step1 first take {this.state.step1} , hole them add some 
+          {this.state.step2} inside puri then add some {this.state.step3} and eat it. It is {this.state.step4}
+        </h4>
+      </div>
+    )
+  }
+}
+
+// in app.js :- <Car />
+
+
+
+
+
+
+
+
