@@ -114,3 +114,23 @@ Note :- creating a React component, the component's name MUST start with an uppe
 
 ######################################--------React Class Components--------################################### 
 
+#what is components?
+Components are independent and reusable bits of code.
+They serve the same purpose as JavaScript functions, but work in isolation and return HTML through a render() function.
+
+#Class Component
+ component's name must start with an upper case letter.
+ include the extends React.Component statement(inheritance)
+ requires a render() method, this method returns HTML.
+ 
+ Example :- Create a Class component called Car
+            class Car extends React.Component {
+            render() {
+                      return <h2>Hi, I am a Car!</h2>;
+                     }
+              }
+            //output :- Hi, I am a Car!
+            
+#What is Component Constructor?
+If there is a constructor() function in our component, this function will be called when the component gets initiated.
+In React, component properties is kept in an object called state.
