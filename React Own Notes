@@ -303,10 +303,48 @@ Note :- Always use the setState() method to change the state object, it will ens
 
 #############---Lifecycle of Components-----###############
 
+The three phases are: Mounting, Updating, and Unmounting.
+Mounting :- Creation/Birth
+Updating :- update/Process
+Unmounting :- Delete/Death
+
+#What is Mounting
+Mounting means putting elements into the DOM.
+
+There are four types of built-in methods
+1.constructor()
+2.getDerivedStateFromProps()
+3.render()
+4.componentDidMount()
+
+#Constructor
+The constructor() method is called before anything else, when the component is initiated,
+and it is the natural place to set up the initial state and other initial values.
+
+The constructor() method is called with the props, as arguments
+and calling the super(props) before anything else
+
+Note :- Whenever we make a components the constructor method is called by React.
+
+Example of Constructor :-
+import React, { Component } from 'react'
+
+export default class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state = {favouriteColor:"Neavy Blue"};
+  }
+  render() {
+    return (
+      <div>
+        <h1>My Favourite Color is {this.state.favouriteColor}</h1>
+      </div>
+    )
+  }
+}
 
 
-
-
+#getDerivedStateFromProps
 
 
 
