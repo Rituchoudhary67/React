@@ -82,7 +82,7 @@ Note :- When destructuring arrays, the order that variables are declared is impo
                item1: 'carrot',
                item2: 'Tomato',
                item3: 'cabbage',
-               item4: 'onoin'
+               item4: 'onion'
            }
            mySandwhich(sandwhich);
           function mySandwhich({item1, item3, item2, item4}) {
@@ -251,7 +251,7 @@ export default class Car extends Component {
       <div>
         <h1>HOW TO MAKE GUPCHHUP ?</h1>
         <h4>
-          First of all take {this.state.material} and step1 first take {this.state.step1} , hole them add some 
+          First of all take {this.state.material} and then first of all take {this.state.step1} , hole them add some 
           {this.state.step2} inside puri then add some {this.state.step3} and eat it. It is {this.state.step4}
         </h4>
       </div>
@@ -263,9 +263,43 @@ export default class Car extends Component {
 
 
 #Changing the state Object
-To change a value in the state object, use the this.setState() method.
+To change a value in the state object, use the ------------this.setState()---------- method.
+When a value in the state object changes, the component will re-render, meaning that the output will
+change according to the new value(s).
 
+Example :- 
 
+import React, { Component } from 'react'
+
+export default class Car extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name : "Ritu Choudhary",
+      age : 20,
+      city : "Nagpur",
+      Study : "Bsc Computer Science"
+    };
+  }
+  changeAge = () => {
+    this.setState({age:21});
+  }
+  render() {
+    return (
+      <>
+       <h1>Hello! I am {this.state.name}</h1>
+       <p>
+        I am {this.state.age} years old. I am from {this.state.city} city which is famous fro Oranges.
+        I am final year student of {this.state.Study} 
+        </p> 
+        <button onClick={this.changeAge}>Age</button>
+      </>
+    )
+  }
+}
+
+Note :- Always use the setState() method to change the state object, it will ensure that the
+        component knows its been updated and calls the render() method
 
 
 
