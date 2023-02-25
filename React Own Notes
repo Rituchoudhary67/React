@@ -301,5 +301,5 @@ export default class Car extends Component {
 Note :- Always use the setState() method to change the state object, it will ensure that the
         component knows its been updated and calls the render() method
 
-
+#############---Lifecycle of Components-----###############
 
