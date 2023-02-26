@@ -346,6 +346,29 @@ export default class Header extends Component {
 
 #getDerivedStateFromProps
 
+The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM.
+This is the natural place to set the state object based on the initial props.
+It takes state as an argument, and returns an object with changes to the state.
+
+Example :- 
+import React, { Component } from 'react'
+
+export default class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state = {favouritecolor:"blue"};
+  }
+  static getDerivedStateFromProps(props,state) {
+    return {favouritecolor : props.favcol};
+  }
+  render() {
+    return (
+      <div>
+        <h1>My Favorite color is {this.state.favouritecolor}</h1>
+      </div>
+    )
+  }
+}
 
 
 
