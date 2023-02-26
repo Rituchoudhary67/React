@@ -374,3 +374,21 @@ export default class Header extends Component {
 🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴NOTE:- NOT UNDERSTANDING LIFECYCLE🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
 
 
+#React Props
+props stands for properties.
+Props are arguments passed into React components.
+Props are passed to components through HTML attributes.
+React Props are like function arguments in JavaScript and attributes in HTML.
+
+Example :-
+import React from 'react'
+
+export default function Car(props) {
+  return (
+    <div>
+      <h1>I am Ritu {props.surname}</h1>
+    </div>
+  )
+}
+
+//in app.js file :-  < Car surname="choudhary"/>
