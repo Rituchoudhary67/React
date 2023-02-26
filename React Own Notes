@@ -418,3 +418,49 @@ function Info(props) {
 
 Note :- Here we are passing the month component from props data 
         React Props are read-only! You will get an error if you try to change their value.
+        
+        
+#React Events
+Just like HTML DOM events, React can perform actions based on user events.
+React has the same events as HTML: click, change, mouseover etc.
+
+React events are written in camelCase syntax:
+here we have to write onClick instead of onclick.
+and onClick={fun name} instead of onclick="fun name()"
+
+Example :- 
+import React from 'react'
+
+export default function Action() {
+    const Food = () => {
+        alert("are u want to eat something??? ")
+    }
+  return (
+    <div>
+      <button onClick={Food}>Click Here to See What's Inside</button>
+    </div>
+  )
+}
+
+//in app.js <Action />
+
+
+#How to Pass Arguments in Event Handler
+To pass an argument to an event handler, use an arrow function.
+
+Example :-
+import React from 'react'
+
+export default function Action() {
+    const Food = (msg) => {
+        alert(msg)
+    }
+  return (
+    <div>
+      <button onClick={() => Food("I want to eat Sweet")}>Click Here to See What's Inside</button>
+    </div>
+  )
+}
+
+//in aap.js <Action />
+
