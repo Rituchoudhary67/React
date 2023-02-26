@@ -392,3 +392,29 @@ export default function Car(props) {
 }
 
 //in app.js file :-  < Car surname="choudhary"/>
+
+#Pass Data
+Props are also how you pass data from one component to another, as parameters.
+
+Example :-
+import React from 'react'
+
+export default function Car(props) {
+  return (
+    <div>
+      <h1>I am Ritu {props.surname}</h1>
+     <Info month="1 Month"/>
+    </div>
+  )
+}
+
+function Info(props) {
+  return(
+    <>
+       <h2>Currently learning React {props.month}</h2>
+    </>
+  )
+}
+
+Note :- Here we are passing the month component from props data 
+        React Props are read-only! You will get an error if you try to change their value.
