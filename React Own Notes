@@ -464,3 +464,30 @@ export default function Action() {
 
 //in aap.js <Action />
 
+#What is React Event Object??
+Event handlers have access to the React event that triggered the function.
+In our example the event is the "click" event.
+
+function Football() {
+  const shoot = (a, b) => {
+    alert(b.type);
+    /*
+    'b' represents the React event that triggered the function,
+    in this case the 'click' event
+    */
+  }
+
+  return (
+    <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);
+
+
+
+
+
+
+
