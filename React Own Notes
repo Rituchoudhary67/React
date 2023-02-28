@@ -487,6 +487,59 @@ root.render(<Football />);
 
 
 
+##React Conditional Rendering??
+In React, we can conditionally render components.
+there are several ways to do this.
+
+1. if statement
+
+Example :-
+mport React from 'react'
+
+function React1() {
+  return <h1>I am learning React</h1>
+}
+
+function JavaScript() {
+  return <h1>I am learning JavaScript</h1>
+}
+export default function Action(props) {
+  const Learning = props.Learning;
+ if(Learning){
+  return <React1 />
+ }
+ return <JavaScript/>
+}
+
+
+//in app.js file :- <Action Learning={ture}/>
+
+
+2.Logical && Operator
+
+3.Ternary Operator
+Syntax :- condition ? true : false
+
+Example :-
+import React from 'react'
+
+function React1() {
+  return <h1>I am learning React</h1>
+}
+
+function JavaScript() {
+  return <h1>I am learning JavaScript</h1>
+}
+export default function Action(props) {
+  const Learning = props.Learning;
+  return(
+    <>
+    {Learning ? <React1 /> : <JavaScript />}
+    </>
+  )
+}
+
+//in app.js :- <Action Learning = {false}/>
 
 
 
