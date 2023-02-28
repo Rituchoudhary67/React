@@ -1,22 +1,22 @@
 #React
 
-# What is React?
+#🔴🔴🔴What is React?🔴🔴🔴
 React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.
 React is a JavaScript library for building user interfaces.
 React is used to build single-page applications.
 React allows us to create reusable UI components
 
-#How does React Work?
+#🔴🔴🔴How does React Work?🔴🔴🔴
 React creates a virtual dom in memory
 and React only changes what needs to be changed.
 Insted of manipulating the browser Dom directly it will create a virtul dom and where it does all the manipulation 
 before make changes to browser DOM 
 
-#What is ES6?
+#🔴🔴🔴What is ES6?🔴🔴🔴
 ES6 stands for ECMAScript 6.
 like most of the browser has not support the advance version of js to handle this behaviour we use ES6.
 
-#What is Classes in React?
+#🔴🔴🔴What is Classes in React?🔴🔴🔴
 A class is a type of function, but instead of using the keyword function to initiate it,
 we use the keyword class, and the properties are assigned inside a constructor() method.
 Example :- class Car {
@@ -27,7 +27,7 @@ Example :- class Car {
 Note :- while using classes in react we have to write class name in uppercase.
         The constructor function is called automatically when the object is initialized.
         
-#What is Class Inheritance in React?
+🔴🔴🔴#What is Class Inheritance in React?🔴🔴🔴
 To create a class inheritance, use the extends keyword.
 
 Example :- class Car {
@@ -58,14 +58,14 @@ Note :- The super() method refers to the parent class.
         By calling the super() method in the constructor method,
         we call the parent's constructor method and get access to the parent's properties and methods.
 
-#Array methods in React?
+🔴🔴🔴#Array methods in React?🔴🔴🔴
 1.Map
   The .map() method allows us to run a function on each item in the array, returning a new array as the result.
   In React, map() can be used to generate lists.
   Example :- const myArray = ['apple', 'banana', 'orange'];
              const myList = myArray.map((item) => <p>{item}</p>)
 
-#What is Destructuring?
+🔴🔴🔴#What is Destructuring?🔴🔴🔴
 lets understand the destructuring with the help of example like ,if i want to make a sandwhich can i get every indegrient which present
 in firdge? ans is no i will chosed which i like.  same with the destructuring it will only select some items from array or object.
 
@@ -89,12 +89,12 @@ Note :- When destructuring arrays, the order that variables are declared is impo
           const message = 'I am making sandwhich ' + 'in which' + item1 + item3 + ' is  there' + 'but' + item2 + item4 + 'is not there.';
          }
 
-#What is JSX?
+🔴🔴🔴#What is JSX?🔴🔴🔴
 JSX stands for JavaScript XML.
 JSX allows us to write HTML in React.
 JSX makes it easier to write and add HTML in React.
 
-#What is React Components?
+🔴🔴🔴#What is React Components?🔴🔴🔴
 Components are independent and reusable bits of code and it returns HTML.
 There are two type of components
            _______________|________________
@@ -114,11 +114,11 @@ Note :- creating a React component, the component's name MUST start with an uppe
 
 ######################################--------React Class Components--------################################### 
 
-#what is components?
+🔴🔴🔴#what is components?🔴🔴🔴
 Components are independent and reusable bits of code.
 They serve the same purpose as JavaScript functions, but work in isolation and return HTML through a render() function.
 
-#Class Component
+🔴🔴🔴#Class Component🔴🔴🔴
  component's name must start with an upper case letter.
  include the extends React.Component statement(inheritance)
  requires a render() method, this method returns HTML.
@@ -131,7 +131,7 @@ They serve the same purpose as JavaScript functions, but work in isolation and r
               }
             //output :- Hi, I am a Car!
             
-#What is Component Constructor?
+#🔴🔴🔴What is Component Constructor?🔴🔴🔴
 If there is a constructor() function in our component, this function will be called when the component gets initiated.
 In React, component properties is kept in an object called state.
 
@@ -153,7 +153,7 @@ export default class Car extends Component {
   }
 }
 
-#Props in class component?
+🔴🔴🔴#Props in class component?🔴🔴🔴
 Another way of handling component properties is by using props.
 Props are like function arguments, here we can send them into the component as attributes.
 
@@ -174,7 +174,7 @@ export default class Car extends Component {
 Note :- here we have to write this.props.state 
 
 
-#How to use Props in the Constructor??
+🔴🔴🔴#How to use Props in the Constructor🔴🔴🔴
 If our component has a constructor function, the props should always be passed to the constructor 
 and also to the React.Component through the super() method.
 
@@ -196,7 +196,7 @@ export default class Car extends Component {
 
 //in render method :-    < Car model="Thar" />
 
-#How to use Components in Components??
+🔴🔴🔴#How to use Components in Components??🔴🔴🔴
 We can refer to components inside other components:
 
 Example :- 
@@ -227,7 +227,7 @@ export default class Car extends Component {
 //in app.js :- inport main component i.e <Car />
 
 
-#What is React Class Component State?
+🔴🔴🔴#What is React Class Component State?🔴🔴🔴
 React Class components have a built-in state object.
 The state object is where we can store property values that belongs to the component.
 When the state object changes, the component re-renders.
@@ -262,7 +262,7 @@ export default class Car extends Component {
 // in app.js :- <Car />
 
 
-#Changing the state Object
+🔴🔴🔴#Changing the state Object🔴🔴🔴
 To change a value in the state object, use the ------------this.setState()---------- method.
 When a value in the state object changes, the component will re-render, meaning that the output will
 change according to the new value(s).
@@ -308,7 +308,7 @@ Mounting :- Creation/Birth
 Updating :- update/Process
 Unmounting :- Delete/Death
 
-#What is Mounting
+🔴🔴🔴#What is Mounting🔴🔴🔴
 Mounting means putting elements into the DOM.
 
 There are four types of built-in methods
@@ -317,7 +317,7 @@ There are four types of built-in methods
 3.render()
 4.componentDidMount()
 
-#Constructor
+🔴🔴🔴#Constructor🔴🔴🔴
 The constructor() method is called before anything else, when the component is initiated,
 and it is the natural place to set up the initial state and other initial values.
 
@@ -344,7 +344,7 @@ export default class Header extends Component {
 }
 
 
-#getDerivedStateFromProps
+🔴🔴🔴#getDerivedStateFromProps🔴🔴🔴
 
 The getDerivedStateFromProps() method is called right before rendering the element(s) in the DOM.
 This is the natural place to set the state object based on the initial props.
@@ -374,7 +374,8 @@ export default class Header extends Component {
 🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴NOTE:- NOT UNDERSTANDING LIFECYCLE🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
 
 
-#React Props
+#Pass Data
+🔴🔴🔴#React Props🔴🔴🔴
 props stands for properties.
 Props are arguments passed into React components.
 Props are passed to components through HTML attributes.
@@ -393,7 +394,7 @@ export default function Car(props) {
 
 //in app.js file :-  < Car surname="choudhary"/>
 
-#Pass Data
+🔴🔴🔴#Pass Data🔴🔴🔴
 Props are also how you pass data from one component to another, as parameters.
 
 Example :-
@@ -420,7 +421,7 @@ Note :- Here we are passing the month component from props data
         React Props are read-only! You will get an error if you try to change their value.
         
         
-#React Events
+🔴🔴🔴#React Events🔴🔴🔴
 Just like HTML DOM events, React can perform actions based on user events.
 React has the same events as HTML: click, change, mouseover etc.
 
@@ -464,7 +465,7 @@ export default function Action() {
 
 //in aap.js <Action />
 
-#What is React Event Object??
+🔴🔴🔴#What is React Event Object??🔴🔴🔴
 Event handlers have access to the React event that triggered the function.
 In our example the event is the "click" event.
 
@@ -487,7 +488,7 @@ root.render(<Football />);
 
 
 
-##React Conditional Rendering??
+🔴🔴🔴##React Conditional Rendering??🔴🔴🔴
 In React, we can conditionally render components.
 there are several ways to do this.
 
@@ -542,5 +543,6 @@ export default function Action(props) {
 //in app.js :- <Action Learning = {false}/>
 
 
+🔴🔴🔴##React Lists🔴🔴🔴
 
 
